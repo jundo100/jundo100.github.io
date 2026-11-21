@@ -1,0 +1,20 @@
+/* 色と書体は brand/design.md と同じ(牛乳びんの紙のフタ) */
+:root { --cobalt: #1C3C9C; --cream: #F5F0E3; --red: #D7262E; --ink: #1d2433; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--cream); color: var(--ink);
+  font-family: 'Zen Kaku Gothic New', 'Hiragino Sans', 'Yu Gothic', sans-serif; font-weight: 500;
+  line-height: 1.85; font-size: 16px; }
+header { background: var(--cobalt); color: var(--cream); padding: 40px 16px 32px; text-align: center; }
+.logo { font-family: 'Dela Gothic One', sans-serif; font-size: 56px; line-height: 1.1; margin: 0; }
+.logo a { color: inherit; text-decoration: none; }
+.logo .num { color: var(--cream); background: var(--red); padding: 0 .12em; margin-left: .05em; }
+.sub { margin: 12px 0 0; font-weight: 900; letter-spacing: .12em; font-size: 15px; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 16px 56px; }
+.lead { font-weight: 900; font-size: 20px; color: var(--cobalt); }
+h2 { font-weight: 900; font-size: 19px; color: var(--cobalt); margin: 36px 0 8px;
+  border-left: 6px solid var(--cobalt); padding-left: 10px; line-height: 1.4; }
+a { color: var(--cobalt); text-underline-offset: 3px; word-break: break-all; }
+code { font-size: 14px; background: #fff; padding: 1px 4px; border-radius: 3px; word-break: break-all; }
+.date { color: #555; font-size: 14px; }
+footer { text-align: center; font-size: 13px; color: #555; padding: 24px 16px 40px; border-top: 1px solid #ddd3bd; }
+@media (max-width: 480px) { .logo { font-size: 44px; } }
